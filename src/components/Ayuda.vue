@@ -1,25 +1,25 @@
 <template>
 
   <div id="divformulario">
-  <div id="formulario">
-    <form action="#">
-      <table>
-        <tbody>
-        <tr>
-          <th> Nombre completo* </th>
-          <td> <input name="Nombre completo" type="text" placeholder="Ingrese su nombre y apellido" id="nombreId" size="130" required> </td>
-        </tr>
-        <tr>
-          <th> Dirección* </th>
-          <td> <input name="Dirección" type="text" placeholder="Ingrese su dirección" id="direccionId" size="130" required> </td>
-        </tr>
-        </tbody>
-      </table>
-      <div class="botonesflex">
-        <button type="button" class="inputbutton" id="btnAddDenuncia">save</button>
-      </div>
-    </form>
-  </div>
+    <div id="formulario">
+      <form action="">
+        <table>
+          <tbody>
+          <tr>
+            <th> Nombre completo* </th>
+            <td> <input name="Nombre completo" type="text" placeholder="Ingrese su nombre y apellido" id="nombreId" size="130" required> </td>
+          </tr>
+          <tr>
+            <th> Dirección* </th>
+            <td> <input name="Dirección" type="text" placeholder="Ingrese su dirección" id="direccionId" size="130" required> </td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="botonesflex">
+          <button type="button" class="inputbutton" id="btnAddDenuncia">save</button>
+        </div>
+      </form>
+    </div>
   </div>
 
 </template>

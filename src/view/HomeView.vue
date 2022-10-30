@@ -4,7 +4,6 @@
   <Home v-if="main.home"/>
   <Informacion v-if="main.informacion"/>
   <Ayuda v-if="main.ayuda"/>
-  <Testimonios v-if="main.testimonios"/>
 
 </template>
 
@@ -13,8 +12,8 @@
 import Header from "@/components/Header";
 import Home from "@/components/Home";
 import Informacion from "@/components/Informacion";
-import Ayuda from "@/components/Ayuda";
-import Testimonios from "@/components/Testimonios";
+import Ayuda from "@/components/Ayuda"
+
 
 export default {
   name: "HomeView",
@@ -23,7 +22,7 @@ export default {
     Home,
     Informacion,
     Ayuda,
-    Testimonios,
+
   },
   data() {
     return {
@@ -34,13 +33,13 @@ export default {
         informacion: false,
         ayuda: false,
         testimonios: false,
+
       }
     }
   },
 
   methods: {
     showMainOptionSelected(option) {
-      console.log("hola")
       let oldOption = this.main.activeOption;
       this.main.activeOption = option;
       this.main[oldOption] = false;
