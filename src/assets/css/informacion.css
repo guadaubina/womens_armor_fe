@@ -1,0 +1,64 @@
+#ring-container{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.ring-shape{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(199, 150, 245);
+    margin: 10px;
+    background-color: rgb(255, 249, 163);
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2%
+}
+
+.circulo :hover{
+    transform: scaleY(1.6) scaleX(1.6)
+}
+
+.circulo :hover p{
+    transform: scaleY(1) scaleX(1)
+}
+#mapa{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-estadistica {
+    margin: 1%;
+    font-size: larger;
+    vertical-align: middle;
+}
+
+.texto-emphasize{
+    text-shadow: 2px 2px #5e5e5e5d;
+    color: rgb(157, 3, 204);
+    font-size: xx-large;
+    font-style: bold;
+    margin: 1%;
+
+}
+h1 {
+    color: blueviolet;
+}
+
+.descripcion {
+    margin: 1% 7%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+section {
+    margin: 5%;
+}
+

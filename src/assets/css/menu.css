@@ -1,0 +1,13 @@
+h1 {
+    color: blueviolet;
+}
+
+.descripcion {
+    margin: 10%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.subtitulo {
+    font-size: larger;
+}

@@ -1,0 +1,130 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f9edfd;
+}
+.navbar {
+    background: #d9afe2;
+
+}
+
+.navButton {
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+    color: #000;
+    transition: .4s ease-out all;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.navButton:hover {
+    background: #993BC7;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+#logo {
+    width: 30%;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 0px 0px;
+    border-bottom:#c076d17b 5px solid;
+    width: 100%;
+}
+
+#formulario {
+    display: flex;
+    width: 70%;
+}
+
+#divformulario {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 10px;
+    margin: 7px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.inputbutton {
+    width: 20%;
+    background-color:#c076d17b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.inputbutton:hover {
+    background-color:#993BC7;
+}
+
+
+
+.linea{
+    border-bottom: #000 solid;
+    text-align: center;
+    margin: 23px auto 15px;
+    height: 2px;
+    width: 36px;
+    border-width: 3px;
+}
+
+.principalheader {
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f9edfd;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#botonpanico{
+    background-color: wheat;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 23px 0px 0px 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+
+}
+
+#botonpanico a:link{
+    text-decoration: none;
+}
+#botonpanico a:active{
+    color:#000
+}
+
+#logo {
+    width: 30%;
+}
