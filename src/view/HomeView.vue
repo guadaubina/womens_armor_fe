@@ -5,7 +5,7 @@
   <Informacion v-if="main.informacion"/>
   <Ayuda v-if="main.ayuda"/>
   <Testimonios v-if="main.testimonios"/>
-
+  <Profesionales v-if="main.profesionales"/>
 
 </template>
 
@@ -16,6 +16,7 @@ import Home from "@/components/Home";
 import Informacion from "@/components/Informacion";
 import Ayuda from "@/components/Ayuda";
 import Testimonios from "@/components/Testimonios";
+import Profesionales from "@/components/Profesionales"
 
 
 export default {
@@ -25,8 +26,8 @@ export default {
     Home,
     Informacion,
     Ayuda,
-    Testimonios
-
+    Testimonios,
+    Profesionales,
   },
   data() {
     return {
@@ -36,7 +37,8 @@ export default {
         home: true,
         informacion: false,
         ayuda: false,
-        testimonios: false
+        testimonios: false,
+        profesionales: false,
 
       }
     }

@@ -39,7 +39,7 @@
 <script>
 
 export default {
-  name: "home",
+  name: "homeComp",
   emits:["mainEvent"],
 }
 

@@ -1,0 +1,69 @@
+
+#cvs-general{
+    text-align: center;
+}
+
+
+.bloquecv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify;
+    margin: 0px 42px;
+
+}
+
+.cv{
+    width: 50%;
+    background-color: #f9ecd9;
+    border: #f0daf8 solid;
+    border-width: 0.3px;
+    border-radius: 2%;
+    margin: 15px;
+    flex-wrap: wrap;
+    box-shadow: 10px #000;
+}
+
+.img-cv{
+    border-radius: 2%;
+    width: 100px;
+    margin: 0px;
+    float: left;
+    border: #000 solid;
+    border-width: 0.3px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.textoCV{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    text-align: left;
+    width: 50%;
+    padding: 0px 0px 10px 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 19px;
+    margin-left: -38px;
+    margin-right: -38px;
+
+}
+
+.nombrecv{
+    text-align: center;
+    border-bottom: #000 solid;
+    border-width: 1px;
+}
+
+.titulo-div{
+    margin-top: 35px;
+}
+
+.titulo2-div{
+    margin-top: 15px;
+}

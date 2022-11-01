@@ -28,7 +28,7 @@
 <script>
 
 export default {
-  name: "header",
+  name: "headerComp",
   emits: ["mainEvent"]
 }
 

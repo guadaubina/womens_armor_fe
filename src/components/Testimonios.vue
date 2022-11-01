@@ -143,7 +143,7 @@
 <script>
 
 export default {
-  name: "testimonios",
+  name: "testimoniosComp",
   emits:["mainEvent"],
 }
 

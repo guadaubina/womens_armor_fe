@@ -27,7 +27,7 @@
 <script>
 
 export default {
-  name: "ayuda",
+  name: "ayudaComp",
   emits:["mainEvent"],
 }
 
