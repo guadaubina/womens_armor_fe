@@ -128,3 +128,290 @@ input[type=text], select {
 #logo {
     width: 30%;
 }
+
+#imgbanner {
+    width: 100%;
+}
+
+#marcha1{
+    display: block;
+    width: 400px;
+    height: 313px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#marcha2{
+    display: block;
+    width: 219px;
+    height: 313px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.banner2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    background-color:#fff;
+;
+    padding: 100px 0px 0px 0px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 30px;
+
+}
+
+
+.videoytexto{
+    justify-content: center;
+    margin: 0px 20px 0px 20px;
+    border-left: #b638d586 solid;
+    border-width: 8px;
+    background-color: #f9edfd;
+}
+
+.epigrafe{
+    margin: -20px 0px 0px 10px;
+}
+
+#texto1{
+    color: #b638d586;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+}
+
+#texto2{
+    color: #b638d586;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin: -20px 0px 0px 0px
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+    height: 125px;
+    margin: 0px 25px 0px 25px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.typing-demo {
+    width: 85ch;
+    animation: typing 6s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2.1em;
+    animation-iteration-count: infinite;
+    color: #000;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.bannerinformacion{
+    background-color: #b6ddb6dc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 320px;
+
+}
+#fondoblancobanner{
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px 20px 20px 30px;
+    height: 250px;
+    width: 400px;
+
+}
+#emergencia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#telefono{
+    height: 80px;
+    width: 80px;
+    margin: 20px 20px 0px 20px;
+}
+#columnaprimeraparte{
+    display: flex;
+    flex-direction: column;
+
+}
+#textotelefono{
+    margin: 2px 0px 20px -10px;
+    font-size: 30px;
+}
+#textoprimeraparte{
+    display: flex;
+    justify-content: center;
+    margin: -10px 30px 20px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.modal {
+    width: 100%;
+    height: 340%;
+    background: rgba(0,0,0,0.8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    animation: modal 2s 3s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenido {
+    margin: auto;
+    width: 40%;
+    height: -30%;
+    background: #f9edfd;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px;
+    justify-content: center;
+    position: fixed;
+    margin: 300px 400px ;
+}
+
+#cerrar {
+    display: none;
+}
+
+#cerrar + label {
+    position: fixed;
+    color: #000;
+    font-size: 25px;
+    z-index: 50;
+    background: #f9edfd;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 150px;
+    top: 150px;
+    cursor: pointer;
+
+    animation: modal 2s 3s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+    display: none;
+}
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#btn-cerrar{
+    text-align: center;
+    color: #000;
+}
+
+#textopop {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+
+.button-33 {
+    background-color: #f55050;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-family:sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+.button-33:hover {
+    transform: scale(1.15);
+}
+
+#color {
+    color: rgb(252, 250, 250);
+    font-weight: bold;
+}
+
+#rightHeader {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0px 0px 0px;
+}
+
+#contactosUtiles {
+    font-weight: bold;
+    padding: 12px 15px 0px 0px;
+}
+
+#contactosUtiles a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#contactosUtiles a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#contactosUtiles a:hover {
+    color: black;
+    transform: scale(1.35);
+}
+
+#marcha3{
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+}
+
+#contBan2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
