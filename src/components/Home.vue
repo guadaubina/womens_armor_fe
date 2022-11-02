@@ -1,8 +1,9 @@
 <template>
 
   <div id="banner">
-    <img src="../assets/img/bannerpng.png" alt="Foto de muchas mujeres juntas">
+    <img src="../assets/img/mujeresmarchando.jpg" alt="Foto de muchas mujeres juntas" id="imgbanner">
   </div>
+
   <div id="scroll">
     <div class="descripcion">
       <h1>Nuestra misión</h1>
@@ -18,22 +19,82 @@
           Esta función sirve para orientar a víctimas que no sepan cómo seguir adelante con la solución para su situación.
           Una vez definido el curso de acción gracias a la orientación se redireccionará a quien corresponda. </em>
       </p>
-      <h1>Nuestra misión</h1>
-      <p class="subtitulo">Somos una organización que brinda asistencia a mujeres en situaciones de abuso. <br>
-        Buscamos generar un recurso <strong>seguro</strong> que unifique información y asistencia. </p>
 
-      <p>
-        <strong>Dentro de la plataforma se podrá acceder a asistencia personalizada: </strong> <br>
-        <br>
-        <em>Podes completar el formulario con los puntos básicos e información necesaria para comprender la situación y poder accionar.
-          Una vez obtenida la información se coordinará una comunicación por el medio seleccionado en el horario pedido para ayudar.
-          Esta función sirve para orientar a víctimas que no sepan cómo seguir adelante con la solución para su situación.
-          Una vez definido el curso de acción gracias a la orientación se redireccionará a quien corresponda. </em>
-      </p>
 
     </div>
 
   </div>
+  <div class="banner2">
+    <div id="contBan2">
+      <div>
+        <img src="../assets/img/marchaimagen1.webp" id="marcha1">
+      </div>
+      <div class="videoytexto">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ieoQuKUxhnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <div class="epigrafe">
+          <h1 id="texto1">8 de Marzo</h1>
+          <h2 id="texto2">Día Internacional de la Mujer</h2>
+        </div>
+      </div>
+      <div>
+        <img src="../assets/img/marchaimagen2.webp" id="marcha2">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div id="banner">
+    <img src="../assets/img/imagenejemplo.png" id="marcha3">
+  </div>
+
+  <div class="wrapper">
+    <div class="typing-demo">
+      Una de cada tres mujeres ha experimentado alguna vez violencia física o sexual.
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="bannerinformacion">
+    <div id="fondoblancobanner">
+      <div id="columnaprimeraparte">
+
+        <div id="emergencia">
+          <div>
+            <img src="../assets/img/telefonp.png" id="telefono">
+          </div>
+          <div id="textotelefono">
+            <p><b>911</b></p>
+          </div>
+        </div>
+
+        <div id="textoprimeraparte">
+          <p>Auxilio en situaciones de riesgo y/o emergencias</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="fondoblancobanner">
+      <div id="columnaprimeraparte">
+
+        <div id="emergencia">
+          <div>
+            <img src="../assets/img/telefonp.png" id="telefono">
+          </div>
+          <div id="textotelefono">
+            <p><b>144</b></p>
+          </div>
+        </div>
+
+        <div id="textoprimeraparte">
+          <p>Atención, asesoramiento y contención para situaciones de violencias por motivos de género.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <script>
