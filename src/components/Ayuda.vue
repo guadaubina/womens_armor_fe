@@ -9,21 +9,21 @@
   <div id="formulario">
 
     <form action="http://127.0.0.1:5000" method="post">
-      <h2>El formulario lo realizo para:</h2>
+      <h2 class="h2Titulo">El formulario lo realizo para:</h2>
       <div id="formsSec1">
         <div><input name="quien" type="radio" value="mi misma" required><label>Para mí</label></div>
         <div><input name="quien" type="radio" value="un tercero"><label>Para un tercero</label></div>
         <div><input type="text" name="vinculo" placeholder="Vinculo con la victima"></div>
       </div>
 
-
-      <h2>Contacto</h2>
+      <div id="contacto">
+      <h2 class="h2Titulo">Contacto</h2>
 
       <label>Teléfono*</label>
       <input type="tel" name="telefono" id="" placeholder="Ingrese Número" maxlength="10" required>
       <label>Mail*</label>
       <input type="email" name="mail" placeholder="Ingrese Mail" required><br>
-
+      </div>
 
       <h3>Horarios seguros de contacto</h3>
       <div class="horarios">
@@ -160,12 +160,12 @@
           </div>
         </fieldset>
 
-        <h2>Sucesos</h2>
+        <h2 class="h2Titulo">Sucesos</h2>
         <textarea rows="15" cols="30" placeholder="Este es un espacio para que puedas ponernos en contexto de la situación. Conta con la cantidad de detalles que te sientas comoda." id="textarea"></textarea>
 
         <div>
           <h3>¿Quiere dejar asentados datos del agresor?
-          <a class="leermasmenos" @click="showHide(value1)" v-if="mas1">[ver más]</a>
+          <a class="leermasmenos" @click="showHide(value1)" v-if="mas1" href="#">[ver más]</a>
           </h3>
         </div>
 
