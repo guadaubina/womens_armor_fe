@@ -165,7 +165,7 @@
 
         <div>
           <h3>¿Quiere dejar asentados datos del agresor?
-          <a class="leermasmenos" @click="showHide(value1)" v-if="mas1" href="#">[ver más]</a>
+          <a class="leermasmenos" @click="showHide()" v-if="mas1" href="#">[ver más]</a>
           </h3>
         </div>
 
