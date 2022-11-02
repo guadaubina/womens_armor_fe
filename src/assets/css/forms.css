@@ -1,0 +1,87 @@
+
+#textoForms{
+    text-align: center;
+    padding: 10px 25px;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    align-items: center;
+}
+
+
+label{
+    padding: 10px;
+    display: inline-block;
+}
+
+input[type=text], select {
+    width: fit-content;
+    margin: 7px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 10px;
+    margin: 7px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number]{
+    width: 100%;
+    padding: 10px;
+    margin: 7px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.horarios{
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+}
+
+#textarea {
+    width: 100%;
+}
+
+form {
+    width: 65%;
+}
+
+#textoForms {
+    background-color: whitesmoke;
+    margin: 20px;
+}
+
+#rowForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#rowMit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+#fieldset {
+    display: inline;
+    width: 100%;
+}

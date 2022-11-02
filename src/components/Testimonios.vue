@@ -2,30 +2,26 @@
 
   <div id="divTestimonios">
     <div class="divTestimonio">
-      <img src="../assets/img/mujer3.jpg" alt="" class="imgMujer1">
-      <h2>Andrea Jimenez </h2>
-      <p class="texto1">
-        Andrea se seca las lágrimas a medida que cuenta su relato. La voz se le entrecorta y aún no se explica cómo llegó a esta situación. Hace cuatro años que estaba en pareja con un hombre que la encerraba en la casa mientras él trabajaba. Vivían en una ciudad del interior provincial.
 
-        <br>"Él salía a las 8 de la mañana a trabajar y volvía a las 8 de la noche. Yo temía que, ante una emergencia con nuestra hija de 1 año, no pudiéramos salir a buscar ayuda. Tampoco me podía escapar porque no tenía adónde ir", cuenta Andrea en diálogo con La Voz.
+      <div>
+        <img src="../assets/img/mujer3.jpg" alt="" class="imgMujer1">
+        <h2>Andrea Jimenez </h2>
+        <div class="texto1">
+          <p>texto no oculto</p>
+          <div @click="showHide(value1)" v-if="mas1"><a href="#">... [leer más]</a></div>
+        </div>
+      </div>
 
-        <a href="#" onclick="vermas1('mas1');" id="mas1">... [leer más]</a>
-      </p>
-      <p id="desplegar1" style="display:none;" class="texto1">
-
-        El comienzo del aislamiento obligatorio dispuesto por el Gobierno nacional a raíz de la pandemia del coronavirus los encontró en una situación particular. “Él (por su pareja) se quedó sin trabajo y me dijo que nos fuéramos a Córdoba, donde tenía ‘algo’. Pero no era así. Estuvimos una semana viviendo en la Terminal de Ómnibus con la nena hasta que vinieron de la Municipalidad a decirnos que nos trasladarían a una pensión porque ya no podíamos quedarnos allí. Yo no sabía de la gravedad de la situación porque no veía las noticias”, explica.<br>
-
-        “Como él se mostraba amable ante el resto de la gente, mientras estuvimos en la terminal no me violentó nunca. Pero el día que llegamos a la pensión, me golpeó mucho y me quiso tirar del balcón”, recuerda angustiada.<br>
-
-        Fue allí cuando Andrea pudo encontrar la ayuda que necesitaba. La administradora de la pensión echó al hombre, llamó a la Policía y, al otro día, Andrea, aconsejada por otras mujeres del lugar, realizó la denuncia en el Polo de la Mujer. Él se dio a la fuga.<br>
-
-        Andrea recibió en el Polo la contención que necesitaba y ahora espera, en un lugar seguro, que pase la cuarentena para comenzar una nueva vida junto con su hija. Con sus otros dos hijos mantiene contacto por videollamadas debido a las medidas de aislamiento social. “Con el papá de los chicos tengo buena relación, por suerte”, dice aliviada. Al reflexionar sobre este tipo de situaciones de violencia que afecta a tantas mujeres, Andrea no duda: “La ayuda de la familia es importante; si no la tenés, como yo, se complica más. Pero hay que pensar en los hijos y en que no pueden criarse en un ambiente tan feo”.<br>
-
-        El caso de Andrea no es aislado. Muchas mujeres que sufren violencia de género se ven obligadas por la cuarentena a quedarse encerradas con sus agresores y el pedido de ayuda se dificulta en ese contexto. Por eso desde espacios institucionales como el Ministerio de las Mujeres de la Nación y el de la Provincia, como también desde organizaciones sociales locales e internacionales, advirtieron que el aislamiento obligatorio podría agravar las situaciones de violencia.<br>
-        <a href="#" onclick="vermas1('menos1');" id="menos1">... [leer menos]</a>
-      </p>
+      <div v-if="value1">
+        <p id="desplegar1" class="texto1">
+          texto oculto
+          <a href="#" @click="showHide">... [leer menos]</a>
+        </p>
+      </div>
     </div>
+
     <div class="divTestimonio">
+      <div></div>
       <img src="../assets/img/mujer1.jpg" alt="" class="imgMujer1">
       <h2>Amanda González</h2>
       <p class="texto1">
@@ -145,63 +141,21 @@
 export default {
   name: "testimoniosComp",
   emits:["mainEvent"],
-}
+  data: function () {
+    return {
+      value1: false,
+      mas1: true,
+    };
+  },
 
-function vermas1(id){
-  if(id=="mas1"){
-    document.getElementById("desplegar1").style.display="block";
-    document.getElementById("mas1").style.display="none";
-  }
-  else{
-    document.getElementById("desplegar1").style.display="none";
-    document.getElementById("mas1").style.display="inline";
-  }
-}
-vermas1()
-function vermas2(id){
-  if(id=="mas2"){
-    document.getElementById("desplegar2").style.display="block";
-    document.getElementById("mas2").style.display="none";
-  }
-  else{
-    document.getElementById("desplegar2").style.display="none";
-    document.getElementById("mas2").style.display="inline";
-  }
-}
-vermas2()
-function vermas3(id){
-  if(id=="mas3"){
-    document.getElementById("desplegar3").style.display="block";
-    document.getElementById("mas3").style.display="none";
-  }
-  else{
-    document.getElementById("desplegar3").style.display="none";
-    document.getElementById("mas3").style.display="inline";
-  }
-}
-vermas3()
-function vermas4(id){
-  if(id=="mas4"){
-    document.getElementById("desplegar4").style.display="block";
-    document.getElementById("mas4").style.display="none";
-  }
-  else{
-    document.getElementById("desplegar4").style.display="none";
-    document.getElementById("mas4").style.display="inline";
-  }
-}
-vermas4()
-function vermas5(id){
-  if(id=="mas5"){
-    document.getElementById("desplegar5").style.display="block";
-    document.getElementById("mas5").style.display="none";
-  }
-  else{
-    document.getElementById("desplegar5").style.display="none";
-    document.getElementById("mas5").style.display="inline";
-  }
-}
-vermas5()
+  methods: {
+    showHide() {
+      this.value1 = ! this.value1;
+      this.mas1 = ! this.mas1;
+    }
+  },
+};
+
 </script>
 
 <style>
