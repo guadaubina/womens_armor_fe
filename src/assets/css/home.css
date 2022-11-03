@@ -22,6 +22,7 @@ body{
     background: #993BC7;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .contenedor {
@@ -33,28 +34,21 @@ body{
 }
 
 #logo {
-    width: 30%;
+    width: 35%;
 }
 
 #banner {
     display: flex;
     justify-content: center;
-    padding: 40px 0px 0px 0px;
-    width: 100%;
+    height: 50%;
 }
+
+
 
 #formulario {
     display: flex;
-    width: 70%;
-}
-
-#divformulario {
-    display: flex;
     justify-content: center;
-}
 
-.epigrafe{
-    margin: -20px 0px 0px 10px;
 }
 
 input[type=text], select {
@@ -83,8 +77,6 @@ input[type=text], select {
     background-color:#993BC7;
 }
 
-
-
 .linea{
     border-bottom: #000 solid;
     text-align: center;
@@ -109,6 +101,7 @@ input[type=text], select {
     justify-content: space-between;
 }
 
+
 #botonpanico{
     width: 120px;
     height: 30px;
@@ -127,58 +120,42 @@ input[type=text], select {
     color:#000
 }
 
-#logo {
-    width: 30%;
-}
 
 
-.button-33 {
-    background-color: #f55050;
-    border-radius: 100px;
-    cursor: pointer;
-    display: inline-block;
-    font-family:sans-serif;
-    padding: 7px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 15px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 
-}
 
-.button-33:hover {
-    transform: scale(1.15);
-}
 
-#color {
-    color: rgb(252, 250, 250);
-    font-weight: bold;
-}
 
+
+
+
+/* agregado  */
 #imgbanner {
     width: 100%;
 }
 
 #marcha1{
     display: block;
-    width: 400px;
-    height: 313px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    height: 90%;
 }
+
 #marcha2{
     display: block;
-    width: 219px;
-    height: 313px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    height: 90%;
 }
+
 
 .banner2{
     display: flex;
@@ -186,22 +163,12 @@ input[type=text], select {
     justify-content: center;
     height: 500px;
     background-color:#fff;
-;
-    padding: 100px 0px 0px 0px;
+    padding: 70px 30px 0px 30px;
     margin: 0px 20px 0px 20px;
     border-radius: 30px;
 
 }
-#marcha3{
-    width: 100%;
-    margin: 30px 0px 30px 0px;
-}
 
-#contBan2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 .videoytexto{
     justify-content: center;
     margin: 0px 20px 0px 20px;
@@ -210,30 +177,8 @@ input[type=text], select {
     background-color: #f9edfd;
 }
 
-#rightHeader {
-    display: flex;
-    flex-direction: row;
-    margin: 16px 0px 0px 0px;
-}
-
-#contactosUtiles {
-    font-weight: bold;
-    padding: 12px 15px 0px 0px;
-}
-
-#contactosUtiles a:link {
-    color: black;
-    text-decoration: none;
-}
-
-#contactosUtiles a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-#contactosUtiles a:hover {
-    color: black;
-    transform: scale(1.35);
+.epigrafe{
+    margin: -20px 0px 0px 10px;
 }
 
 #texto1{
@@ -258,12 +203,6 @@ input[type=text], select {
     margin: 0px 25px 0px 25px;
     background-color: white;
     border-radius: 30px;
-}
-
-#banner {
-    display: flex;
-    justify-content: center;
-    height: 50%;
 }
 
 .typing-demo {
@@ -306,34 +245,199 @@ input[type=text], select {
     width: 400px;
 
 }
-
-#columnaprimeraparte{
-    display: flex;
-    flex-direction: column;
-
-}
-
 #emergencia{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 #telefono{
     height: 80px;
     width: 80px;
     margin: 20px 20px 0px 20px;
 }
+#columnaprimeraparte{
+    display: flex;
+    flex-direction: column;
 
+}
 #textotelefono{
     margin: 2px 0px 20px -10px;
     font-size: 30px;
 }
-
 #textoprimeraparte{
     display: flex;
     justify-content: center;
-    margin: -10px 30px 20px 30px;
+    margin: -10px 15px 20px 15px;
     font-size: 20px;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+.modal {
+    width: 100%;
+    height: 340%;
+    background: rgba(0,0,0,0.8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    animation: modal 2s 3s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenido {
+    margin: auto;
+    width: 40%;
+    height: -30%;
+    background: #f9edfd;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px;
+    justify-content: center;
+    position: fixed;
+    margin: 300px 400px ;
+}
+
+#cerrar {
+    display: none;
+}
+
+#cerrar + label {
+    position: fixed;
+    color: #000;
+    font-size: 25px;
+    z-index: 50;
+    background: #f9edfd;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 150px;
+    top: 150px;
+    cursor: pointer;
+
+    animation: modal 2s 3s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+    display: none;
+}
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#btn-cerrar{
+    text-align: center;
+    color: #000;
+}
+
+#textopop {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+
+.button-33 {
+    background-color: #f55050;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-family:sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+.button-33:hover {
+    transform: scale(1.15);
+}
+
+#color {
+    color: rgb(252, 250, 250);
+    font-weight: bold;
+}
+
+#rightHeader {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0px 0px 0px;
+}
+
+#contactosUtiles {
+    font-weight: bold;
+    padding: 12px 15px 0px 0px;
+}
+
+#contactosUtiles a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#contactosUtiles a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#contactosUtiles a:hover {
+    color: black;
+    transform: scale(1.35);
+}
+
+#marcha3{
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+}
+
+#contBan2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#divImg {
+    width: 200px;
+    height: 100%;
+}
+
+#contactosUtiles:hover {
+    color: black;
+    transform: scale(1.20);
+    cursor: pointer;
+}
+
+
+#logoprincipal:hover {
+    cursor: pointer;
+}
+
+#divNabBar {
+    height: 68.667px;
+}
+

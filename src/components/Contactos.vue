@@ -36,8 +36,10 @@
 </template>
 
 <script>
+
 export default {
-  name: "contactos"
+  name: "contactosComp",
+  emits:["mainEvent"],
 }
 </script>
 

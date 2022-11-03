@@ -1,15 +1,17 @@
 <template>
 
   <div id="banner">
-    <img src="../assets/img/mujeresmarchando.jpg" alt="Foto de muchas mujeres juntas" id="imgbanner">
+    <div>
+      <img src="../assets/img/mujeresmarchando.jpg" alt="Foto de muchas mujeres juntas" id="imgbanner">
+    </div>
   </div>
-
   <div id="scroll">
     <div class="descripcion">
       <h1>Nuestra misión</h1>
       <p class="subtitulo">Somos una organización que brinda asistencia a mujeres en situaciones de abuso. <br>
         Buscamos generar un recurso <strong>seguro</strong> que unifique información y asistencia. </p>
       <br>
+
 
       <p>
         <strong>Dentro de la plataforma se podrá acceder a asistencia personalizada: </strong> <br>
@@ -20,13 +22,12 @@
           Una vez definido el curso de acción gracias a la orientación se redireccionará a quien corresponda. </em>
       </p>
 
-
     </div>
 
   </div>
   <div class="banner2">
     <div id="contBan2">
-      <div>
+      <div id="divImg">
         <img src="../assets/img/marchaimagen1.webp" id="marcha1">
       </div>
       <div class="videoytexto">
@@ -37,12 +38,11 @@
           <h2 id="texto2">Día Internacional de la Mujer</h2>
         </div>
       </div>
-      <div>
+      <div id="divImg">
         <img src="../assets/img/marchaimagen2.webp" id="marcha2">
       </div>
     </div>
   </div>
-
   <br>
   <div id="banner">
     <img src="../assets/img/imagenejemplo.png" id="marcha3">
@@ -55,7 +55,6 @@
   </div>
   <br>
   <br>
-
   <div class="bannerinformacion">
     <div id="fondoblancobanner">
       <div id="columnaprimeraparte">
@@ -92,6 +91,21 @@
           <p>Atención, asesoramiento y contención para situaciones de violencias por motivos de género.</p>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <input type="checkbox" id="cerrar">
+  <label for="cerrar" id="btn-cerrar">X</label>
+  <div class="modal">
+    <div class="contenido">
+      <p id="textopop"><b>Para poder navegar con más tranquilidad por los contenidos de esta web, tené en cuenta lo siguiente...</b></p>
+      <p>Opción de "SALIR RÁPIDO": Dispondrás de un botón siempre accesible en pantalla.
+
+        Borra tu historial de navegación para no dejar rastro después de informarte.
+
+        Utiliza el modo incógnito o privado de navegación, si no quieres que tu navegador guarde registro de los sitios web que visitas y del contenido que descargas.</p>
+      <img src="http://lorempixel.com/200/200" alt="">
     </div>
   </div>
 

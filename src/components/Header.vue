@@ -9,7 +9,7 @@
         </div>
         <div id="rightHeader">
           <div id="contactosUtiles">
-            <a href="../html/contactos.html">CONTACTOS</a>
+            <span v-on:click="$emit('mainEvent', 'contactos')">CONTACTOS</span>
           </div>
           <div id="botonpanico" class="button-33">
             <div>
@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <div>
+    <div id="divNabBar">
       <nav class="navbar">
         <div class="contenedor">
           <div> <span v-on:click="$emit('mainEvent', 'informacion')" class="navButton"> INFORMACIÓN </span> </div>
