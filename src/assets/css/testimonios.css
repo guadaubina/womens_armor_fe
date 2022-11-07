@@ -2,13 +2,15 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    color: black;
 }
 
 .divTestimonio {
     background-color: #f0daf8;
     margin: 10px;
-    padding: 0 5px 0 5px;
+    padding: 3px 5px 3px 5px;
     border-radius: 3px;
+    color: black;
 }
 
 .imgMujer1{
@@ -27,4 +29,5 @@
 
 h2 {
     margin: 10px;
+    color: black;
 }

@@ -101,7 +101,7 @@
                 <tbody id="table">
                 <tr>
                   <td>Nombre completo</td>
-                  <td><input type="text" name="nombre" placeholder="Ingrese nombre completo"></td>
+                  <td><input type="text" name="nombre" placeholder="Ingrese nombre completo" id="nombreId"></td>
                 </tr>
                 <tr>
                   <td>DNI</td>
@@ -251,7 +251,7 @@
           </fieldset>
         </div>
       <div class="botonesflex">
-        <button type="button" class="inputbutton" id="btnAddDenuncia">save</button>
+        <button type="button" class="inputbutton" id="btnAddDenuncia" onclick="create_order()">save</button>
       </div>
 
     </form>
@@ -268,16 +268,18 @@ export default {
     return {
       value1: false,
       mas1: true,
+      nombreId: ""
     };
   },
 
   methods: {
     showHide() {
-      this.value1 = ! this.value1;
-      this.mas1 = ! this.mas1;
-    }
-  },
+      this.value1 = !this.value1;
+      this.mas1 = !this.mas1;
+    },
+  }
 };
+
 
 </script>
 

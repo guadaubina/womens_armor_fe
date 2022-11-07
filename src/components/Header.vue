@@ -25,7 +25,7 @@
           <div> <span v-on:click="$emit('mainEvent', 'informacion')" class="navButton"> INFORMACIÓN </span> </div>
           <div> <span v-on:click="$emit('mainEvent', 'ayuda')" class="navButton"> AYUDA </span> </div>
           <div> <span v-on:click="$emit('mainEvent', 'profesionales')" class="navButton">PROFESIONALES </span> </div>
-          <div> <span v-on:click="$emit('mainEvent', 'testimonios')" class="navButton">TESTIMONIOS</span> </div>
+          <div> <span v-on:click="$emit('mainEvent', 'testimoniosAA')" class="navButton">TESTIMONIOS</span> </div>
         </div>
       </nav>`
     </div>

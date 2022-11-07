@@ -7,7 +7,7 @@
   </div>
   <div id="scroll">
     <div class="descripcion">
-      <h1>Nuestra misión</h1>
+      <h1 class="titulos">Nuestra misión</h1>
       <p class="subtitulo">Somos una organización que brinda asistencia a mujeres en situaciones de abuso. <br>
         Buscamos generar un recurso <strong>seguro</strong> que unifique información y asistencia. </p>
       <br>

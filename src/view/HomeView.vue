@@ -4,7 +4,7 @@
   <Home v-if="main.home"/>
   <Informacion v-if="main.informacion"/>
   <Ayuda v-if="main.ayuda"/>
-  <Testimonios v-if="main.testimonios"/>
+  <TestimoniosAA v-if="main.testimoniosAA"/>
   <Profesionales v-if="main.profesionales"/>
   <Contactos v-if="main.contactos"/>
 
@@ -16,8 +16,8 @@ import Header from "@/components/Header";
 import Home from "@/components/Home";
 import Informacion from "@/components/Informacion";
 import Ayuda from "@/components/Ayuda";
-import Testimonios from "@/components/Testimonios";
-import Profesionales from "@/components/Profesionales"
+import TestimoniosAA from "@/components/TestimoniosAA";
+import Profesionales from "@/components/Profesionales";
 import Contactos from "@/components/Contactos"
 
 
@@ -28,7 +28,7 @@ export default {
     Home,
     Informacion,
     Ayuda,
-    Testimonios,
+    TestimoniosAA,
     Profesionales,
     Contactos,
   },
@@ -40,7 +40,7 @@ export default {
         home: true,
         informacion: false,
         ayuda: false,
-        testimonios: false,
+        testimoniosAA: false,
         profesionales: false,
         contactos: false,
 
