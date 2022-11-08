@@ -21,7 +21,7 @@
       <h2 class="h2Titulo">Contacto</h2>
 
       <label>Teléfono*</label>
-      <input id="" v-model="telefonoContacto" maxlength="10" name="telefono" placeholder="Ingrese Número" type="tel" required>
+      <input id="" v-model="telefonoId" maxlength="10" name="telefono" placeholder="Ingrese Número" type="tel" required>
       <label>Mail*</label>
       <input type="email" name="mail" placeholder="Ingrese Mail" required><br>
       </div>
@@ -104,7 +104,7 @@
                 <tbody id="table">
                 <tr>
                   <td>Nombre completo</td>
-                  <td><input v-model="nombreVictima" type="text" name="nombre" placeholder="Ingrese nombre completo" id="nombreId"></td>
+                  <td><input v-model="nombreId" type="text" name="nombre" placeholder="Ingrese nombre completo" id="nombreId"></td>
                 </tr>
                 <tr>
                   <td>DNI</td>
@@ -286,6 +286,7 @@ export default {
       value1: false,
       mas1: true,
       nombreId: "",
+      telefonoId:"",
       clickCount: 0,
     };
   },
@@ -296,10 +297,19 @@ export default {
       this.mas1 = !this.mas1;
     },
     createContact() {
-      axios.post(url:"http://localhost:8080", data: {
-        "nombre": this.nombreId,
-            direccion: this.direccionId,
+      axios.post( "http://localhost:8080", {
+        nombre: this.nombreId,
+        telefono: this.telefonoId,
+        form: JSON.parse(this.$route.query[""])
       })
+          .then(response => {
+            console.log(response);
+            this.$router.push({name:"FormSucces"})
+          })
+          .catch(error => {
+            console.log(error);
+            this.$router.push({name:"FormError"})
+          })
     },
   }
 };
