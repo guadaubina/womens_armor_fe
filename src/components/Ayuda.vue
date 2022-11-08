@@ -8,7 +8,7 @@
 
   <div class="formulario">
 
-    <form action="http://127.0.0.1:5000" method="post">
+    <form action="" method="post">
       <h2 class="h2Titulo">El formulario lo realizo para:</h2>
       <div id="formsSec1">
         <div><input name="quien" type="radio" value="mi misma" required><label>Para mí</label></div>
@@ -21,8 +21,7 @@
       <h2 class="h2Titulo">Contacto</h2>
 
       <label>Teléfono*</label>
-      <input id="" v-model="telefonoContacto" maxlength="10" name="telefono" placeholder="Ingrese Número" required
-             type="tel">
+      <input id="" v-model="telefonoContacto" maxlength="10" name="telefono" placeholder="Ingrese Número" type="tel" required>
       <label>Mail*</label>
       <input type="email" name="mail" placeholder="Ingrese Mail" required><br>
       </div>
@@ -257,22 +256,25 @@
           </fieldset>
         </div>
       <div class="botonesflex">
-        <button type="button" class="inputbutton" id="btnAdd" onclick="create_order()" v-on:click="clickCount++">Enviar</button>
+        <button type="submit" class="inputbutton" id="btnAdd" v-on:click="createContact()"> Enviar </button>
       </div>
 
     </form>
   </div>
 
-  <div id="confirmacion" v-if="clickCount > 0">
-    <p> ¡Hola {{nombreVictima}}! Muchas gracias por completar el formulario.</p>
-    <p>Nos comunicaremos al número {{telefonoContacto}} a la brevedad. </p>
+  <!--<div id="confirmacion" v-if="clickCount > 0">
+    <p> Hola {{nombreVictima}}! Muchas gracias por completar el formulario. Nos comunicaremos al número {{telefonoContacto}} a la brevedad. </p>
   </div>
+   v-on:click="clickCount++"
+  -->
 
   <br><br><br><br><br><br><br><br>
 
 </template>
 
 <script>
+
+import axios from "axios";
 
 export default {
   name: "ayudaComp",
@@ -292,6 +294,12 @@ export default {
     showHide() {
       this.value1 = !this.value1;
       this.mas1 = !this.mas1;
+    },
+    createContact() {
+      axios.post(url:"http://localhost:8080", data: {
+        "nombre": this.nombreId,
+            direccion: this.direccionId,
+      })
     },
   }
 };
