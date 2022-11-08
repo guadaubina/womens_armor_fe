@@ -6,7 +6,6 @@
     </div>
   </div>
 
-  <br><br>
   <div id="scroll">
     <div class="descripcion">
       <h1 class="titulos">Nuestra misión</h1>

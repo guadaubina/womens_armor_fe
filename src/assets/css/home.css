@@ -43,7 +43,9 @@ body{
     height: 50%;
 }
 
-
+#scroll{
+    margin: 5%
+}
 
 #formulario {
     display: flex;
