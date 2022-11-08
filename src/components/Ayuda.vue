@@ -1,4 +1,10 @@
 <template>
+  <br>
+  <br>
+  <br>
+  <router-link to='/ayuda/success'>AYUDA</router-link>
+  <br>
+  <router-view></router-view>
 
   <div id="textoForms">
     <p>En este formulario encontrarás puntos básicos e información necesaria para que podamos comprender la situación. El objetivo del mismo es poder que luego de brindarnos un contacto podriamos orientatte en el proceso. </p>
@@ -304,7 +310,7 @@ export default {
       })
           .then(response => {
             console.log(response);
-            this.$router.push({name:"FormSucces"})
+            this.$router.push({name:"FormSuccess"})
           })
           .catch(error => {
             console.log(error);
