@@ -304,7 +304,7 @@ export default {
       })
           .then(response => {
             console.log(response);
-            this.$router.push({name:"FormSucces"})
+            this.$router.push({name:"FormSuccess"})
           })
           .catch(error => {
             console.log(error);
