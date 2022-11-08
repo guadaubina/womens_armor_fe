@@ -264,7 +264,8 @@
   </div>
 
   <div id="confirmacion" v-if="clickCount > 0">
-    <p> Hola {{nombreVictima}}! Muchas gracias por completar el formulario. Nos comunicaremos al número {{telefonoContacto}} a la brevedad. </p>
+    <p> ¡Hola {{nombreVictima}}! Muchas gracias por completar el formulario.</p>
+    <p>Nos comunicaremos al número {{telefonoContacto}} a la brevedad. </p>
   </div>
 
   <br><br><br><br><br><br><br><br>

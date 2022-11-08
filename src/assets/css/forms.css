@@ -1,8 +1,9 @@
 
 #textoForms{
+    font-size: large;
     text-align: center;
-    padding: 1% 17%;
-    background-color: #daffdf;
+    padding: 1% 13%;
+    background-color: white;
     margin: 20px;
     box-shadow: 1px 2px 15px ;
 }
@@ -100,4 +101,5 @@ h3 {
     background-color: plum;
     box-shadow: 1px 3px 10px ;
     border-radius: 20px;
+    font-size: large;
 }

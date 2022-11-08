@@ -1,3 +1,7 @@
+.titulo-contactos{
+    font-size: 40px;
+    text-shadow: 1px 2px 3px darkgrey;
+}
 
 .contactos {
     margin: 0;
@@ -7,7 +11,4 @@ section{
     margin: 5% 10%;
 }
 
-.titulo-contactos{
-    font-size: 40px;
-    text-shadow: 1px 2px 3px darkgrey;
-}
+
