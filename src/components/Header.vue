@@ -1,5 +1,4 @@
 <template>
-
   <div class="principalheader">
     <div id="row">
         <div id="logoprincipal">
