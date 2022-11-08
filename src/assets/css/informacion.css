@@ -52,6 +52,21 @@ h1 {
     color: black;
 }
 
+#titulopreguntasfrecuentes{
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+    text-align: center;
+
+
+}
+.textopreguntasfrecuentes{
+    background-color: white;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 2%;
+}
+
 .descripcion {
     margin: 1% 7%;
     text-align: justify;
@@ -60,5 +75,60 @@ h1 {
 
 section {
     margin: 5%;
+}
+
+#indice{
+    margin-top: 4%;
+}
+
+.index-link{
+    text-decoration: none;
+    font-size: 130%;
+    color: black;
+}
+
+.index-border {
+    background-color:#f9edfd6f;
+    border: 5px #d9afe2 solid;
+    width: 60%;
+    border-block-width: 3px;
+    padding: 1.25% 1.25% 1.25% 3%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textoyfoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+}
+
+#click {
+    width: 2.5%;
+    height: 1%;
+}
+
+
+#imgInfo {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+#imgInfo:hover {
+    filter: grayscale(0);
+}
+
+#imgclic {
+    width: 25px;
+    margin: -5px;
+}
+
+#linea{
+    height: 4px;
+    background-color: #d9afe2;
+    width: 70%;
 }
 
