@@ -5,6 +5,8 @@
       <img src="../assets/img/mujeresmarchando.jpg" alt="Foto de muchas mujeres juntas" id="imgbanner">
     </div>
   </div>
+
+  <br><br>
   <div id="scroll">
     <div class="descripcion">
       <h1 class="titulos">Nuestra misión</h1>
