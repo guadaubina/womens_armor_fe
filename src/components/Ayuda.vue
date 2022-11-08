@@ -1,12 +1,12 @@
 <template>
 
   <div id="textoForms">
-    <p id="textoForms">En este formulario encontrarás puntos básicos e información necesaria para que podamos comprender la situación. El objetivo del mismo es poder que luego de brindarnos un contacto podriamos orientatte en el proceso. </p>
+    <p>En este formulario encontrarás puntos básicos e información necesaria para que podamos comprender la situación. El objetivo del mismo es poder que luego de brindarnos un contacto podriamos orientatte en el proceso. </p>
   </div>
   <div class="linea"></div>
 
 
-  <div id="formulario">
+  <div class="formulario">
 
     <form action="http://127.0.0.1:5000" method="post">
       <h2 class="h2Titulo">El formulario lo realizo para:</h2>
@@ -15,12 +15,14 @@
         <div><input name="quien" type="radio" value="un tercero"><label>Para un tercero</label></div>
         <div><input type="text" name="vinculo" placeholder="Vinculo con la victima"></div>
       </div>
+      <br> <br>
 
       <div id="contacto">
       <h2 class="h2Titulo">Contacto</h2>
 
       <label>Teléfono*</label>
-      <input type="tel" name="telefono" id="" placeholder="Ingrese Número" maxlength="10" required>
+      <input id="" v-model="telefonoContacto" maxlength="10" name="telefono" placeholder="Ingrese Número" required
+             type="tel">
       <label>Mail*</label>
       <input type="email" name="mail" placeholder="Ingrese Mail" required><br>
       </div>
@@ -92,16 +94,18 @@
           </div>
         </div>
       </div>
+      <br> <br>
+
 
         <fieldset>
           <legend><h2>Persona que sufrió violencia</h2></legend>
           <div>
-            <div id="formulario">
+            <div class="formulario">
               <table>
                 <tbody id="table">
                 <tr>
                   <td>Nombre completo</td>
-                  <td><input type="text" name="nombre" placeholder="Ingrese nombre completo" id="nombreId"></td>
+                  <td><input v-model="nombreVictima" type="text" name="nombre" placeholder="Ingrese nombre completo" id="nombreId"></td>
                 </tr>
                 <tr>
                   <td>DNI</td>
@@ -159,9 +163,11 @@
             </div>
           </div>
         </fieldset>
+      <br> <br>
 
         <h2 class="h2Titulo">Sucesos</h2>
         <textarea rows="15" cols="30" placeholder="Este es un espacio para que puedas ponernos en contexto de la situación. Conta con la cantidad de detalles que te sientas comoda." id="textarea"></textarea>
+      <br> <br>
 
         <div>
           <h3>¿Quiere dejar asentados datos del agresor?
@@ -173,7 +179,7 @@
           <fieldset v-if="value1">
             <legend><h2>Agresor</h2></legend>
             <div>
-              <div id="formulario">
+              <div class="formulario">
                 <table>
                   <tbody id="table">
                   <tr>
@@ -251,11 +257,17 @@
           </fieldset>
         </div>
       <div class="botonesflex">
-        <button type="button" class="inputbutton" id="btnAddDenuncia" onclick="create_order()">save</button>
+        <button type="button" class="inputbutton" id="btnAdd" onclick="create_order()" v-on:click="clickCount++">Enviar</button>
       </div>
 
     </form>
   </div>
+
+  <div id="confirmacion" v-if="clickCount > 0">
+    <p> Hola {{nombreVictima}}! Muchas gracias por completar el formulario. Nos comunicaremos al número {{telefonoContacto}} a la brevedad. </p>
+  </div>
+
+  <br><br><br><br><br><br><br><br>
 
 </template>
 
@@ -264,11 +276,14 @@
 export default {
   name: "ayudaComp",
   emits:["mainEvent"],
-  data: function () {
+  data() {
     return {
+      nombreVictima: null,
+      telefonoContacto : null,
       value1: false,
       mas1: true,
-      nombreId: ""
+      nombreId: "",
+      clickCount: 0,
     };
   },
 
