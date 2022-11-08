@@ -297,7 +297,7 @@ export default {
       this.mas1 = !this.mas1;
     },
     createContact() {
-      axios.post( "http://localhost:8080", {
+      axios.post( "http://127.0.0.1:5000/forms", {
         nombre: this.nombreId,
         telefono: this.telefonoId,
         form: JSON.parse(this.$route.query[""])
