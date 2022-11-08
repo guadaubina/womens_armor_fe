@@ -1,5 +1,4 @@
 <template>
-
   <Header v-on:mainEvent="showMainOptionSelected"/>
   <Home v-if="main.home"/>
   <Informacion v-if="main.informacion"/>

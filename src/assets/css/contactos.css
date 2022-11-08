@@ -1,14 +1,13 @@
-h2{
-    color:black;
-}
 
-#contactos {
+.contactos {
     margin: 0;
+    color: darkviolet;
 }
 section{
     margin: 5% 10%;
 }
 
-h1{
+.titulo-contactos{
     font-size: 40px;
+    text-shadow: 1px 2px 3px darkgrey;
 }
