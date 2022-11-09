@@ -256,16 +256,15 @@
           </fieldset>
         </div>
       <div class="botonesflex">
-        <button type="submit" class="inputbutton" id="btnAdd" > Enviar </button>
+        <button type="submit" class="inputbutton" id="btnAdd"> Enviar </button>
       </div>
 
     </form>
   </div>
 
-  <div id = "confirmacion">
-    {{nombreId}} {{ this.message }}
+  <div id = "confirmacion" v-if="successMnsj">
+    <p>Hola {{nombreId}}, {{this.message}}</p>
   </div>
-
 
     <br><br><br><br><br><br><br><br>
 
@@ -277,7 +276,7 @@
   export default {
     name: "ayudaComp",
     emits:["mainEvent"],
-  data() {
+    data() {
     return {
       value1: false,
       mas1: true,
@@ -289,6 +288,7 @@
       dniId:"",
       sucesosId:"",
       message: "",
+      successMnsj: false,
     };
   },
 
@@ -313,7 +313,8 @@
           .then(response => {
             console.log(response.data.message);
             if (response.data.status === "201") {
-              this.message = " El formulario se ha enviado correctamente. Gracias. Nos comunicaremos a la brevedad."
+              this.message = "El formulario se ha enviado correctamente. Gracias. Nos comunicaremos a la brevedad."
+              this.successMnsj = true
             }
 
 
@@ -322,6 +323,7 @@
             console.log(error);
             if (error.data.status !== "201") {
               this.message = " Hubo un problema al enviar el formulario. Intente de nuevo más tarde."
+              this.successMnsj = true
             }
 
           })

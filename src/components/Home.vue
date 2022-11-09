@@ -97,9 +97,16 @@
 
   <div class="newsletter">
     <form @submit.prevent="suscripcion()">
+
       <h3> Newsletter </h3>
-      <input type="email" name="mail" placeholder="Ingrese Mail" required v-model="mailNl"><br>
-      <button type="submit"> Suscribirme </button>
+
+      <div id="input-newsletter">
+        <input type="email" name="mail" placeholder="Ingrese Mail" required v-model="mailNl"><br>
+      </div>
+      <div id="button-newsletter">
+        <button type="submit"> Suscribirme </button>
+      </div>
+
     </form>
   </div>
 
@@ -161,3 +168,4 @@ export default {
 @import "../assets/css/home.css";
 
 </style>
+
