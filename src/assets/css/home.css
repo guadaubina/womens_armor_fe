@@ -442,13 +442,41 @@ input[type=text], select {
     margin: 1% 0%;
 }
 
-#input-newsletter{
-    display: inline-block;
-    size: 200px
+.newsletter-bloqueuno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
 }
 
+#div-img-newsletter{
+}
+#img-newsletter{
+    width: 50px;
+    height: 50px;
+}
+
+#texto-newsletter{
+    display: inline-block;
+    padding-bottom: 10px;
+
+}
+#input-newsletter{
+    display: inline-block;
+    size: 200px;
+    font-weight: 200;
+}
+
+input[type="email" i] {
+    padding: 12px;
+}
 #button-newsletter{
     display: inline-block;
     padding-bottom: 4%;
     padding-left: 1%;
+}
+<<<<<<< HEAD
+
+button.button-subscribe{
+    padding: 12px;
 }
