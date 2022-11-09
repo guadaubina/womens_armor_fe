@@ -23,7 +23,7 @@
       <label>Teléfono*</label>
       <input id="" v-model="telefonoId" maxlength="10" name="telefono" placeholder="Ingrese Número" type="tel" required>
       <label>Mail*</label>
-      <input type="email" name="mail" placeholder="Ingrese Mail" required><br>
+      <input type="email" v-model="mailId" name="mail" placeholder="Ingrese Mail" required><br>
       </div>
 
       <h3>Horarios seguros de contacto</h3>
@@ -32,7 +32,7 @@
         <div id="rowForm">
           <div id="rowMit">
             <div><label>Día</label> </div>
-            <div><select name="Seleccionar" required>
+            <div><select name="Seleccionar" required v-model="diaId">
               <option value="Seleccionar">Seleccionar</option>
               <option value="Lunes">Lunes</option>
               <option value="Martes">Martes</option>
@@ -45,7 +45,7 @@
           </div>
           <div id="rowMit">
             <div><label>Hora</label></div>
-            <div><input type="time" name="horario" required><br></div>
+            <div><input type="time" name="horario" required v-model="horaId"><br></div>
           </div>
         </div>
 
@@ -108,7 +108,7 @@
                 </tr>
                 <tr>
                   <td>DNI</td>
-                  <td><input type="text" name="dni" placeholder="Ingrese DNI"></td>
+                  <td><input type="text" name="dni" placeholder="Ingrese DNI" v-model="dniId"></td>
                 </tr>
                 <tr>
                   <td>Edad</td>
@@ -165,7 +165,7 @@
       <br> <br>
 
         <h2 class="h2Titulo">Sucesos</h2>
-        <textarea rows="15" cols="30" placeholder="Este es un espacio para que puedas ponernos en contexto de la situación. Conta con la cantidad de detalles que te sientas comoda." id="textarea"></textarea>
+        <textarea v-model="sucesosId" rows="15" cols="30" placeholder="Este es un espacio para que puedas ponernos en contexto de la situación. Conta con la cantidad de detalles que te sientas comoda." id="textarea"> </textarea>
       <br> <br>
 
         <div>
@@ -289,6 +289,11 @@ export default {
       mas1: true,
       nombreId: "",
       telefonoId:"",
+      mailId: "",
+      diaId: "",
+      horaId:"",
+      dniId:"",
+      sucesosId:"",
       message: null,
     };
   },
@@ -302,7 +307,12 @@ export default {
 
       let form = {
         nombre: this.nombreId,
+        dni: this.dniId,
         telefono: this.telefonoId,
+        mail: this.mailId,
+        dia: this.diaId,
+        hora: this.horaId,
+        sucesos: this.sucesosId,
       }
 
       axios.post( "http://127.0.0.1:5000/api/v1/forms", form)
@@ -332,3 +342,4 @@ export default {
 @import "../assets/css/forms.css";
 
 </style>
+
