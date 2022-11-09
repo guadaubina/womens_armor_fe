@@ -117,11 +117,6 @@ section {
 
 #imgInfo {
     width: 100%;
-    filter: grayscale(1);
-}
-
-#imgInfo:hover {
-    filter: grayscale(0);
 }
 
 #imgclic {

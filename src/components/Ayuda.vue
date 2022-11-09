@@ -1,7 +1,7 @@
 <template>
 
   <div id="textoForms">
-    <p>En este formulario encontrarás puntos básicos e información necesaria para que podamos comprender la situación. El objetivo del mismo es poder que luego de brindarnos un contacto podriamos orientatte en el proceso. </p>
+    <p>En este formulario podrás brindarnos la información necesaria para que podamos orientarte en cómo seguir adelante. </p>
   </div>
   <div class="linea"></div>
 
