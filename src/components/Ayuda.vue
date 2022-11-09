@@ -256,19 +256,16 @@
           </fieldset>
         </div>
       <div class="botonesflex">
-        <button type="submit" class="inputbutton" id="btnAdd"> Enviar </button>
+        <button type="submit" class="inputbutton" id="btnAdd" > Enviar </button>
       </div>
 
     </form>
   </div>
 
-{{ this.message }}
+  <div id = "confirmacion">
+    {{nombreId}} {{ this.message }}
+  </div>
 
-    <!--
-    <div id="confirmacion">
-      <p> ¡Hola {{nombreId}}! Muchas gracias por completar el formulario. Nos comunicaremos al número {{telefonoId}} a la brevedad. </p>
-    </div>
-  -->
 
     <br><br><br><br><br><br><br><br>
 
@@ -316,7 +313,7 @@
           .then(response => {
             console.log(response.data.message);
             if (response.data.status === "201") {
-              this.message = "Formulario enviado!!"
+              this.message = " El formulario se ha enviado correctamente. Gracias. Nos comunicaremos a la brevedad."
             }
 
 
@@ -324,7 +321,7 @@
           .catch(error => {
             console.log(error);
             if (error.data.status !== "201") {
-              this.message = "Formulario no enviado!!"
+              this.message = " Hubo un problema al enviar el formulario. Intente de nuevo más tarde."
             }
 
           })
