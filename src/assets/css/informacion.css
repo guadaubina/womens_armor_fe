@@ -7,14 +7,14 @@
 }
 
 .ring-shape{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
-    border-style: double;
-    border-width: 5px;
-    border-color: rgb(199, 150, 245);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #d9afe2e4;
     margin: 10px;
-    background-color: rgb(255, 249, 163);
+    background-color: #e6efe6;
     display: flex ;
     flex-direction: column;
     justify-content: center;
@@ -48,15 +48,14 @@
     margin: 1%;
 
 }
-h1 {
-    color: black;
-}
 
-#titulopreguntasfrecuentes{
+
+.titulopreguntasfrecuentes{
     display: flex;
     justify-content: center;
     font-size:xx-large;
     text-align: center;
+    font-weight: bold;
 
 
 }
@@ -68,13 +67,17 @@ h1 {
 }
 
 .descripcion {
-    margin: 1% 7%;
     text-align: justify;
     line-height: 30px;
 }
 
 section {
     margin: 5%;
+
+}
+
+.link-texto{
+    color: blueviolet;
 }
 
 #indice{
@@ -131,4 +134,3 @@ section {
     background-color: #d9afe2;
     width: 70%;
 }
-
