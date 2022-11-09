@@ -8,7 +8,7 @@
 
   <div class="formulario">
 
-    <form action="" method="post">
+    <form @submit.prevent="createContact()">
       <h2 class="h2Titulo">El formulario lo realizo para:</h2>
       <div id="formsSec1">
         <div><input name="quien" type="radio" value="mi misma" required><label>Para mí</label></div>
@@ -256,7 +256,7 @@
           </fieldset>
         </div>
       <div class="botonesflex">
-        <button type="submit" class="inputbutton" id="btnAdd" v-on:click="createContact()"> Enviar </button>
+        <button type="submit" class="inputbutton" id="btnAdd"> Enviar </button>
       </div>
 
     </form>
@@ -273,7 +273,6 @@
 </template>
 
 <script>
-
 import axios from "axios";
 
 export default {
@@ -281,13 +280,10 @@ export default {
   emits:["mainEvent"],
   data() {
     return {
-      nombreVictima: null,
-      telefonoContacto : null,
       value1: false,
       mas1: true,
       nombreId: "",
       telefonoId:"",
-      clickCount: 0,
     };
   },
 
@@ -297,18 +293,20 @@ export default {
       this.mas1 = !this.mas1;
     },
     createContact() {
-      axios.post( "http://127.0.0.1:5000/forms", {
+
+      let form = {
         nombre: this.nombreId,
         telefono: this.telefonoId,
-        form: JSON.parse(this.$route.query[""])
-      })
+      }
+
+      axios.post( "http://127.0.0.1:5000/api/v1/forms", form)
           .then(response => {
-            console.log(response);
-            this.$router.push({name:"FormSuccess"})
+            console.log(response.data.message);
+            // this.$router.push({name:"FormSuccess"})
           })
           .catch(error => {
             console.log(error);
-            this.$router.push({name:"FormError"})
+            this.$router.push({name: "FormError"})
           })
     },
   }
