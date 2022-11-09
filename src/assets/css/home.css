@@ -439,7 +439,6 @@ input[type=text], select {
     display: flex;
     justify-content: center;
     background-color: whitesmoke;
-    /*width: 50%; */
     text-align: center;
     margin: 1% 0%;
 }
@@ -451,8 +450,6 @@ input[type=text], select {
     padding: 5px;
 }
 
-#div-img-newsletter{
-}
 #img-newsletter{
     width: 50px;
     height: 50px;
@@ -469,7 +466,7 @@ input[type=text], select {
     font-weight: 200;
 }
 
-input[type="email" i] {
+input[type="email"] {
     padding: 12px;
 }
 #button-newsletter{
@@ -486,7 +483,6 @@ input[type="email" i] {
 
 #sponsors{
     width: 50%;
-
 }
 
 

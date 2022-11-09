@@ -131,6 +131,8 @@
       <img src="http://lorempixel.com/200/200" alt="">
     </div>
   </div>
+
+
   <div id="sponsorsDiv">
     <img src="../assets/img/sponsors.jpg" id="sponsors">
   </div>
