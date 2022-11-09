@@ -1,7 +1,9 @@
 <template>
 
   <div id="textoForms">
-    <p>En este formulario podrás brindarnos la información necesaria para que podamos orientarte en cómo seguir adelante. </p>
+    <p>En este formulario podrás brindarnos la información necesaria para que podamos orientarte en cómo seguir adelante.</p>
+    <p>Una vez obtenida la información se coordinará una comunicación por el medio seleccionado en el horario pedido.</p>
+    <p>Al encontrar un curso de acción se redireccionará a los profesionales que correspondan.</p>
   </div>
   <div class="linea"></div>
 
@@ -263,7 +265,7 @@
   </div>
 
   <div id = "confirmacion" v-if="successMnsj">
-    <p>Hola {{nombreId}}, {{this.message}}</p>
+    <p>{{nombreId}} {{this.message}}</p>
   </div>
 
     <br><br><br><br><br><br><br><br>
