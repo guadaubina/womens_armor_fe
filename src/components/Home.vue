@@ -57,7 +57,7 @@
   <br>
   <br>
   <div class="bannerinformacion">
-    <div id="fondoblancobanner">
+    <a target="_blank" id="fondoblancobanner" href="https://www.argentina.gob.ar/seguridad/911emergencias">
       <div id="columnaprimeraparte">
 
         <div id="emergencia">
@@ -74,9 +74,9 @@
         </div>
 
       </div>
-    </div>
+    </a>
 
-    <div id="fondoblancobanner">
+    <a target="_blank" id="fondoblancobanner" href="https://www.argentina.gob.ar/generos/linea-144">
       <div id="columnaprimeraparte">
 
         <div id="emergencia">
@@ -92,7 +92,7 @@
           <p>Atención, asesoramiento y contención para situaciones de violencias por motivos de género.</p>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 
   <div class="newsletter">
@@ -124,6 +124,10 @@
       <img src="http://lorempixel.com/200/200" alt="">
     </div>
   </div>
+  <div id="sponsorsDiv">
+    <img src="../assets/img/sponsors.jpg" id="sponsors">
+  </div>
+
 
 </template>
 

@@ -235,6 +235,8 @@ input[type=text], select {
     margin: 40px 20px 20px 30px;
     height: 250px;
     width: 400px;
+    text-decoration: none;
+    color: black;
 
 }
 #emergencia{
@@ -451,4 +453,14 @@ input[type=text], select {
     display: inline-block;
     padding-bottom: 4%;
     padding-left: 1%;
+}
+
+#sponsorsDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#sponsors{
+    width: 50%;
+
 }
