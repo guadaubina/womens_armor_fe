@@ -201,6 +201,15 @@
     </ul>
   </div>
 
+  <span id="6">
+
+        <br>
+        <br>
+        <hr id="linea">
+        <br>
+        <br>
+    </span>
+
 
   <div id="ring-container">
     <div class="circulo">
@@ -247,7 +256,7 @@
 
   <section>
     <p class="titulopreguntasfrecuentes">Fiscalías Especializadas en Argentina</p>
-    <h3>Encontrá la fiscalía especializada más cercana para poder realizar una denuncia lo más segura posible.</h3>
+    <h3 id="h3centrado">Encontrá la fiscalía especializada más cercana para poder realizar una denuncia lo más segura posible.</h3>
     <br>
     <div id="mapa">
       <iframe src="https://www.google.com/maps/d/embed?mid=1E6ZGFwFM8EoZc13PNrnSzRhNuVk&ehbc=2E312F" width="640" height="480"></iframe>
