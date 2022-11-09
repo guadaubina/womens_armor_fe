@@ -432,3 +432,23 @@ input[type=text], select {
 .titulos {
     color: #993BC7;
 }
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    /*width: 50%; */
+    text-align: center;
+    margin: 1% 0%;
+}
+
+#input-newsletter{
+    display: inline-block;
+    size: 200px
+}
+
+#button-newsletter{
+    display: inline-block;
+    padding-bottom: 4%;
+    padding-left: 1%;
+}
