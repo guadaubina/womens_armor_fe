@@ -97,14 +97,21 @@
 
   <div class="newsletter">
     <form @submit.prevent="suscripcion()">
-
-      <h3> Newsletter </h3>
-
-      <div id="input-newsletter">
-        <input type="email" name="mail" placeholder="Ingrese Mail" required v-model="mailNl"><br>
+      <div class="newsletter-bloqueuno">
+        <div id="div-img-newsletter">
+          <img src="../assets/img/letter_icon-icons.com_67753.png" id="img-newsletter">
+        </div>
+        <div id="texto-newsletter">
+          <h2> Newsletter </h2>
+        </div>
       </div>
-      <div id="button-newsletter">
-        <button type="submit"> Suscribirme </button>
+      <div>
+        <div id="input-newsletter">
+          <input class="newsleter-email" type="email" name="mail" placeholder="Ingrese Mail" required v-model="mailNl" size="50"><br>
+        </div>
+        <div id="button-newsletter">
+          <button type="submit" class="button-subscribe"> Suscribirme </button>
+        </div>
       </div>
 
     </form>
