@@ -1,4 +1,8 @@
-import Vue from "vue";
+import { createApp } from 'vue'
+import App from './App.vue'
+
+createApp(App).mount('#app')
+/*import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
 
@@ -38,8 +42,9 @@ new Vue({
 }).$mount('#app')
 
 
-// const app = Vue.createApp(App);
-// app.use(router);
-// app.mount('#app');
+const app = Vue.createApp(App);
+app.use(router);
+app.mount('#app');
 
 
+*/

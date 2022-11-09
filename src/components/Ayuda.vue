@@ -262,6 +262,11 @@
     </form>
   </div>
 
+  {{ this.message }}
+
+
+
+
   <!--<div id="confirmacion" v-if="clickCount > 0">
     <p> Hola {{nombreVictima}}! Muchas gracias por completar el formulario. Nos comunicaremos al número {{telefonoContacto}} a la brevedad. </p>
   </div>
@@ -284,6 +289,7 @@ export default {
       mas1: true,
       nombreId: "",
       telefonoId:"",
+      message: null,
     };
   },
 
@@ -302,6 +308,11 @@ export default {
       axios.post( "http://127.0.0.1:5000/api/v1/forms", form)
           .then(response => {
             console.log(response.data.message);
+            if (response.data.status === "201") {
+              this.message = "Formulario enviado!!"
+            }
+
+
             // this.$router.push({name:"FormSuccess"})
           })
           .catch(error => {
