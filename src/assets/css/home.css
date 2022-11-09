@@ -441,6 +441,7 @@ input[type=text], select {
     background-color: whitesmoke;
     text-align: center;
     margin: 1% 0%;
+    border: black;
 }
 
 .newsletter-bloqueuno{
@@ -469,6 +470,7 @@ input[type=text], select {
 input[type="email"] {
     padding: 12px;
 }
+
 #button-newsletter{
     display: inline-block;
     padding-bottom: 4%;
@@ -486,7 +488,13 @@ input[type="email"] {
 }
 
 
-button.button-subscribe{
+.button-subscribe{
     padding: 12px;
+    margin-left: 10px;
 }
 
+#ingreseDatos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

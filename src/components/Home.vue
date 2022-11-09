@@ -105,7 +105,7 @@
           <h2> Newsletter </h2>
         </div>
       </div>
-      <div>
+      <div id="ingreseDatos">
         <div id="input-newsletter">
           <input class="newsleter-email" type="email" name="mail" placeholder="Ingrese Mail" required v-model="mailNl" size="50"><br>
         </div>
@@ -113,10 +113,30 @@
           <button type="submit" class="button-subscribe"> Suscribirme </button>
         </div>
       </div>
-
+      <div v-if="suscripcionCorrecta">
+        <p>{{message2}} </p>
+      </div>
     </form>
   </div>
 
+  <div class="newsletter">
+    <form @submit.prevent="delete_mail()">
+      <div class="newsletter-bloqueuno">
+        <p><b> Ingrese su mail si desea desuscribirse de nuestro Newsletter </b></p>
+      </div>
+      <div id="ingreseDatos">
+        <div id="input-newsletter">
+          <input class="newsleter-email" type="email" name="mail" placeholder="Ingrese Mail" required v-model="mailD" size="50"><br>
+        </div>
+        <div id="button-newsletter">
+          <button type="submit" class="button-subscribe"> Desuscribirme </button>
+        </div>
+      </div>
+      <div v-if="desuscripcionCorrecta">
+        <p>{{ message }}</p>
+      </div>
+    </form>
+  </div>
 
   <input type="checkbox" id="cerrar">
   <label for="cerrar" id="btn-cerrar">X</label>
@@ -149,7 +169,11 @@ export default {
   data() {
     return {
       mailNl: "",
+      mailD:"",
       message: null,
+      message2: null,
+      suscripcionCorrecta: false,
+      desuscripcionCorrecta: false,
     }
   },
   methods: {
@@ -162,13 +186,31 @@ export default {
       axios.post("http://127.0.0.1:5000/api/v1/suscripcion", form)
           .then(response => {
             console.log(response.data.message);
-            if(response.data.status === "201") {
-              this.message = "Suscripción realizada con exito"
-            }
+            this.message2 = "Suscripción realizada con exito"
+            this.suscripcionCorrecta = true
+
           })
           .catch(error => {
             console.log(error);
-            this.message = "Suscripción no realizada. Vuelva a intentarlo"
+            this.message2 = "Suscripción no realizada. Vuelva a intentarlo"
+          })
+    },
+
+    delete_mail() {
+
+      let mailA = this.mailD
+
+      axios.delete("http://127.0.0.1:5000/api/v1/suscripcion/" + mailA)
+          .then(response => {
+            console.log(response.data);
+            this.message = "Desuscripción realizada con exito"
+            this.desuscripcionCorrecta = true
+
+          })
+          .catch(error => {
+            console.log(error);
+            this.message = "No hemos podido desuscribirte, intentalo mas tarde"
+
           })
     },
   }

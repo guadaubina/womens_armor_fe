@@ -105,8 +105,8 @@
               <table>
                 <tbody id="table">
                 <tr>
-                  <td>Nombre completo</td>
-                  <td><input v-model="nombreId" type="text" name="nombre" placeholder="Ingrese nombre completo" id="nombreId"></td>
+                  <td>Nombre completo*</td>
+                  <td><input v-model="nombreId" type="text" name="nombre" placeholder="Ingrese nombre completo" id="nombreId" required></td>
                 </tr>
                 <tr>
                   <td>DNI</td>
@@ -315,7 +315,7 @@
           .then(response => {
             console.log(response.data.message);
             if (response.data.status === "201") {
-              this.message = "El formulario se ha enviado correctamente. Gracias. Nos comunicaremos a la brevedad."
+              this.message = ", el formulario se ha enviado correctamente. Gracias. Nos comunicaremos a la brevedad."
               this.successMnsj = true
             }
 
