@@ -48,7 +48,15 @@
     </nav>
   </ul>
 
-  <img src="../assets/img/feminismo2informacion.jpeg" id="imgInfo">
+  <div>
+    <br>
+    <img src="../assets/img/feminismo2informacion.jpg" id="imgInfo">
+    <br>
+  </div>
+
+
+
+
 
   <span id="1">
         <br>
