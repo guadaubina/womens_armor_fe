@@ -262,27 +262,24 @@
     </form>
   </div>
 
-  {{ this.message }}
+{{ this.message }}
 
-
-
-
-  <!--<div id="confirmacion" v-if="clickCount > 0">
-    <p> Hola {{nombreVictima}}! Muchas gracias por completar el formulario. Nos comunicaremos al número {{telefonoContacto}} a la brevedad. </p>
-  </div>
-   v-on:click="clickCount++"
+    <!--
+    <div id="confirmacion">
+      <p> ¡Hola {{nombreId}}! Muchas gracias por completar el formulario. Nos comunicaremos al número {{telefonoId}} a la brevedad. </p>
+    </div>
   -->
 
-  <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
 
-</template>
+  </template>
 
-<script>
-import axios from "axios";
+  <script>
+  import axios from "axios";
 
-export default {
-  name: "ayudaComp",
-  emits:["mainEvent"],
+  export default {
+    name: "ayudaComp",
+    emits:["mainEvent"],
   data() {
     return {
       value1: false,
@@ -294,7 +291,7 @@ export default {
       horaId:"",
       dniId:"",
       sucesosId:"",
-      message: null,
+      message: "",
     };
   },
 
@@ -323,11 +320,13 @@ export default {
             }
 
 
-            // this.$router.push({name:"FormSuccess"})
           })
           .catch(error => {
             console.log(error);
-            this.$router.push({name: "FormError"})
+            if (error.data.status !== "201") {
+              this.message = "Formulario no enviado!!"
+            }
+
           })
     },
   }
