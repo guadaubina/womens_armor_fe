@@ -96,11 +96,11 @@
   </div>
 
   <div class="newsletter">
-    <forms @submit.prevent="suscripcion()">
+    <form @submit.prevent="suscripcion()">
       <h3> Newsletter </h3>
       <input type="email" name="mail" placeholder="Ingrese Mail" required v-model="mailNl"><br>
       <button type="submit"> Suscribirme </button>
-    </forms>
+    </form>
   </div>
 
 
@@ -141,7 +141,7 @@ export default {
 
       axios.post("http://127.0.0.1:5000/api/v1/suscripcion", form)
           .then(response => {
-            console.log(response.data.response);
+            console.log(response.data.message);
             if(response.data.status === "201") {
               this.message = "Suscripción realizada con exito"
             }
