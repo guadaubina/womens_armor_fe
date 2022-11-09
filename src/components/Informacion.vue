@@ -150,58 +150,59 @@
         <br>
     </span>
 
-  <div class="textopreguntasfrecuentes">
-    <p class="titulopreguntasfrecuentes">MEDIDAS DE PREVENCIÓN FUERA DEL DOMICILIO</p>
-    <ul class="descripcion">
-      <li>Lleva siempre un teléfono móvil.</li>
-      <li>Guarda los <a class="link-texto" href="contactos.html">números de emergencia</a> en tu teléfono móvil vinculándolos a una tecla de marcado rápido.</li>
-      <li>Presta atención en los trayectos rutinarios y a las horas de llegada y salida del trabajo, del colegio de tus hijos, etc.</li>
-      <li>Activa siempre el cierre automático de las puertas del auto.</li>
-      <li>No estaciones en sitios poco iluminados ni transitados.</li>
-      <li>Si sabes con antelación que existe la posibilidad de coincidir con el agresor (puntos de encuentro, actuaciones judiciales conjuntas, etc.), pide a algún familiar o persona de confianza que te acompañe. Y comunica esta situación a la Unidad policial que, en su caso, valorará qué medida de protección será la adecuada.</li>
-    </ul>
-  </div>
+    <div class="bigItem">
+      <div class="textopreguntasfrecuentes">
+        <p class="titulopreguntasfrecuentes">MEDIDAS DE PREVENCIÓN FUERA DEL DOMICILIO</p>
+        <ul class="descripcion">
+          <li>Lleva siempre un teléfono móvil.</li>
+          <li>Guarda los <a class="link-texto" href="contactos.html">números de emergencia</a> en tu teléfono móvil vinculándolos a una tecla de marcado rápido.</li>
+          <li>Presta atención en los trayectos rutinarios y a las horas de llegada y salida del trabajo, del colegio de tus hijos, etc.</li>
+          <li>Activa siempre el cierre automático de las puertas del auto.</li>
+          <li>No estaciones en sitios poco iluminados ni transitados.</li>
+          <li>Si sabes con antelación que existe la posibilidad de coincidir con el agresor (puntos de encuentro, actuaciones judiciales conjuntas, etc.), pide a algún familiar o persona de confianza que te acompañe. Y comunica esta situación a la Unidad policial que, en su caso, valorará qué medida de protección será la adecuada.</li>
+        </ul>
+      </div>
 
-  <div class="textopreguntasfrecuentes">
-    <p class="titulopreguntasfrecuentes">MEDIDAS DE PREVENCIÓN EN CASA</p>
-    <ul class="descripcion">
-      <li>Al entrar y salir de casa, presta atención y comprueba los alrededores de tu vivienda.</li>
-      <li>Antes de abrir la puerta, comprueba qué persona está llamando, si no la ves claramente NO abras.</li>
-      <li>Cambia tus números de teléfonos y solicita a la empresa que no sean registrados en guías públicas.</li>
-      <li>Comunica tu situación a personas de tu confianza, especialmente vecinos, para que te adviertan si ven al agresor merodeando por los alrededores de tu vivienda para que adoptes medidas de prevención y, en su caso, avisen también a la policía.</li>
-      <li>Organiza con una amiga, vecina o familiar, a dónde acudir si tienes que marcharte con urgencia del domicilio.</li>
-      <li>Prepara por si tienes que marcharte precipitadamente un bolso con: la documentación (tarjeta o cartilla sanitaria propio y de los menores que tenga a su cargo, DNI y pasaporte, permiso de residencia, libro de familia, tarjetas bancarias y cartillas de ahorro, contratos de vivienda, documentos de separación o divorcio, escrituras, informes médicos, llaves de la vivienda y del auto, medicamentos habituales…)</li>
-    </ul>
-  </div>
+      <div class="textopreguntasfrecuentes">
+        <p class="titulopreguntasfrecuentes">MEDIDAS DE PREVENCIÓN EN CASA</p>
+        <ul class="descripcion">
+          <li>Al entrar y salir de casa, presta atención y comprueba los alrededores de tu vivienda.</li>
+          <li>Antes de abrir la puerta, comprueba qué persona está llamando, si no la ves claramente NO abras.</li>
+          <li>Cambia tus números de teléfonos y solicita a la empresa que no sean registrados en guías públicas.</li>
+          <li>Comunica tu situación a personas de tu confianza, especialmente vecinos, para que te adviertan si ven al agresor merodeando por los alrededores de tu vivienda para que adoptes medidas de prevención y, en su caso, avisen también a la policía.</li>
+          <li>Organiza con una amiga, vecina o familiar, a dónde acudir si tienes que marcharte con urgencia del domicilio.</li>
+          <li>Prepara por si tienes que marcharte precipitadamente un bolso con: la documentación (tarjeta o cartilla sanitaria propio y de los menores que tenga a su cargo, DNI y pasaporte, permiso de residencia, libro de familia, tarjetas bancarias y cartillas de ahorro, contratos de vivienda, documentos de separación o divorcio, escrituras, informes médicos, llaves de la vivienda y del auto, medicamentos habituales…)</li>
+        </ul>
+      </div>
 
-  <div class="textopreguntasfrecuentes">
-    <p class="titulopreguntasfrecuentes">SI VES AL AGRESOR</p>
-    <ul class="descripcion">
-      <p><strong>Y estás fuera del domicilio:</strong></p>
-      <li>Dirígete rápidamente a un lugar concurrido y llama a la policía informando de la situación. Si no tienes lugar público a donde ir, llama la atención de personas que estén en la calle o pide auxilio en alguna casa cercana.</li>
-      <li>Si estás en el coche y ves al agresor, no detengas el vehículo y dirígete a un lugar que consideres seguro (casas de familiares, amigos, dependencias policiales, etc).</li>
-      <br>
-      <p><strong>Y estás en tu casa:</strong></p>
-      <li>Ve con un teléfono a una habitación más segura, donde te puedas encerrar (por ejemplo, el baño) y llama a la policía.</li>
-      <li>Si no te da tiempo a encerrarte, ve a una ventana, grita y pide auxilio para que alguien te pueda ayudar.</li>
-      <li>Aléjate de la cocina y de las habitaciones de la casa donde hay objetos peligrosos.</li>
-      <li>Ten preparada una señal con tus hijos para que se encierren en una habitación o salgan de la casa a pedir ayuda a alguien de confianza que viva cerca.</li>
-    </ul>
-    <br>
-  </div>
+      <div class="textopreguntasfrecuentes">
+        <p class="titulopreguntasfrecuentes">SI VES AL AGRESOR</p>
+        <ul class="descripcion">
+          <p><strong>Y estás fuera del domicilio:</strong></p>
+          <li>Dirígete rápidamente a un lugar concurrido y llama a la policía informando de la situación. Si no tienes lugar público a donde ir, llama la atención de personas que estén en la calle o pide auxilio en alguna casa cercana.</li>
+          <li>Si estás en el coche y ves al agresor, no detengas el vehículo y dirígete a un lugar que consideres seguro (casas de familiares, amigos, dependencias policiales, etc).</li>
+          <br>
+          <p><strong>Y estás en tu casa:</strong></p>
+          <li>Ve con un teléfono a una habitación más segura, donde te puedas encerrar (por ejemplo, el baño) y llama a la policía.</li>
+          <li>Si no te da tiempo a encerrarte, ve a una ventana, grita y pide auxilio para que alguien te pueda ayudar.</li>
+          <li>Aléjate de la cocina y de las habitaciones de la casa donde hay objetos peligrosos.</li>
+          <li>Ten preparada una señal con tus hijos para que se encierren en una habitación o salgan de la casa a pedir ayuda a alguien de confianza que viva cerca.</li>
+        </ul>
+        <br>
+      </div>
 
-  <div class="textopreguntasfrecuentes">
-    <p class="titulopreguntasfrecuentes">SI CREES QUE TE VA A AGREDIR</p>
+      <div class="textopreguntasfrecuentes">
+        <p class="titulopreguntasfrecuentes">SI CREES QUE TE VA A AGREDIR</p>
 
-    <ul class="descripcion">
-      <li>Intenta escapar</li>
-      <li>Grita y pide auxilio a otras personas que te puedan ayudar o llamar a la policía.</li>
-      <li>Intenta defenderte</li>
-      <li>Protege las partes más vulnerables de tu cuerpo (cara, cabeza, pecho y vientre) con los brazos y las piernas</li>
-    </ul>
-  </div>
-
-  <span id="6">
+        <ul class="descripcion">
+          <li>Intenta escapar</li>
+          <li>Grita y pide auxilio a otras personas que te puedan ayudar o llamar a la policía.</li>
+          <li>Intenta defenderte</li>
+          <li>Protege las partes más vulnerables de tu cuerpo (cara, cabeza, pecho y vientre) con los brazos y las piernas</li>
+        </ul>
+      </div>
+    </div>
+  <span>
 
         <br>
         <br>

@@ -138,3 +138,8 @@ section {
 #h3centrado{
     text-align: center;
 }
+
+.bigItem{
+    background-color: rgba(217, 175, 226, 0.66);
+    padding: 7%;
+}
