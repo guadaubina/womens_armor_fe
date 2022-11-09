@@ -2,7 +2,7 @@
 #textoForms{
     font-size: large;
     text-align: center;
-    padding: 1% 13%;
+    padding: 1% 10%;
     background-color: white;
     margin: 20px;
     box-shadow: 1px 2px 15px ;
@@ -54,6 +54,27 @@ input[type=number]{
     box-sizing: border-box;
 }
 
+input[type=tel] {
+    width: 100%;
+    padding: 10px;
+    margin: 7px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin: 7px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
 .horarios{
     text-align: left;
 }
@@ -102,4 +123,7 @@ h3 {
     box-shadow: 1px 3px 10px ;
     border-radius: 20px;
     font-size: large;
+    font-family: "Arial Rounded MT Bold";
+    display: flex;
+    justify-content: center;
 }
