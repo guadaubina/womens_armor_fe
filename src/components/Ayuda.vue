@@ -314,21 +314,16 @@
       axios.post( "http://127.0.0.1:5000/api/v1/forms", form)
           .then(response => {
             console.log(response.data.message);
-            if (response.data.status === "201") {
               this.message = ", el formulario se ha enviado correctamente. Gracias. Nos comunicaremos a la brevedad."
               this.successMnsj = true
             }
-
-
-          })
+          )
           .catch(error => {
             console.log(error);
-            if (error.data.status !== "201") {
-              this.message = " Hubo un problema al enviar el formulario. Intente de nuevo más tarde."
+              this.message = "Hubo un problema al enviar el formulario. Intente de nuevo más tarde."
               this.successMnsj = true
             }
-
-          })
+          )
     },
   }
 };
